@@ -74,6 +74,12 @@
   [data]
   (clojure.pprint/pprint data))
 
+;; Echo (with pretty-print) the request received
+(defn handler [request]
+  {:status 200
+  :headers {"content-type" "text/clojure"}
+  :body (with-out-str (clojure.pprint/pprint request))})
+
 (defn -main
   [& args]
  ;; (def server (jetty/run-jetty #'app {:port 8080 :join? false}))
