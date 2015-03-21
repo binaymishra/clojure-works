@@ -72,13 +72,16 @@
 
 (defn final-summary 
   [data]
-  (clojure.pprint/pprint data))
+  {"summaries" (summaries data)
+   "orders" data})
 
-;; Echo (with pretty-print) the request received
-(defn handler [request]
+
+
+(defn app
+  [request]
   {:status 200
-  :headers {"content-type" "text/clojure"}
-  :body (with-out-str (clojure.pprint/pprint request))})
+   :body (with-out-str
+           (clojure.pprint/pprint request))})
 
 (defn -main
   [& args]

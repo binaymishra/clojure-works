@@ -6,7 +6,8 @@
   :dependencies [[org.clojure/clojure "1.6.0"]
                  [ring "1.3.2"]
                  [compojure "1.3.2"]
-                 [enlive "1.1.5"]]
+                 [enlive "1.1.5"]
+                 [org.clojure/data.json "0.2.6"]]
   :main ^:skip-aot puzzle.app
   :target-path "target/%s"
   :profiles {:uberjar {:aot :all}})
