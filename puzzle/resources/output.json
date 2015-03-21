@@ -1,0 +1,280 @@
+
+For url : http://localhost:8080/?q=session-type-desc
+
+Result :
+
+{
+   "summaries":{
+      "runa-summary":{
+         "unit-price-dollars":360.5,
+         "merchant-discount-dollars":15.0,
+         "runa-discount-dollars":65.2
+      },
+      "merchant-summary":{
+         "unit-price-dollars":360.0,
+         "merchant-discount-dollars":12.2,
+         "runa-discount-dollars":65.3
+      }
+   },
+   "orders":[
+      {
+         "merchant-data":{
+            "unit-price-dollars":50.0,
+            "merchant-discount-dollars":2.0,
+            "runa-discount-dollars":14.8,
+            "session-type":"UNMANAGED",
+            "order-id":"72145239"
+         },
+         "runa-data":{
+            "unit-price-dollars":50.0,
+            "merchant-discount-dollars":5.0,
+            "runa-discount-dollars":15.0,
+            "session-type":"unmanaged",
+            "order-id":"72145239"
+         }
+      },
+      {
+         "merchant-data":{
+            "unit-price-dollars":200.0,
+            "merchant-discount-dollars":0.0,
+            "runa-discount-dollars":30.0,
+            "session-type":"TEST",
+            "order-id":"72144777"
+         },
+         "runa-data":{
+            "unit-price-dollars":200.0,
+            "merchant-discount-dollars":0.0,
+            "runa-discount-dollars":30.0,
+            "session-type":"test",
+            "order-id":"72144777"
+         }
+      },
+      {
+         "merchant-data":{
+            "unit-price-dollars":110.0,
+            "merchant-discount-dollars":10.2,
+            "runa-discount-dollars":20.5,
+            "session-type":"CONTROL",
+            "order-id":"72144305"
+         },
+         "runa-data":{
+            "unit-price-dollars":110.5,
+            "merchant-discount-dollars":10.0,
+            "runa-discount-dollars":20.2,
+            "session-type":"control",
+            "order-id":"72144305"
+         }
+      }
+   ]
+}
+
+
+
+
+For url : http://localhost:8080/?q=order-id-asc
+
+Result :
+
+{
+   "summaries":{
+      "runa-summary":{
+         "unit-price-dollars":360.5,
+         "merchant-discount-dollars":15.0,
+         "runa-discount-dollars":65.2
+      },
+      "merchant-summary":{
+         "unit-price-dollars":360.0,
+         "merchant-discount-dollars":12.2,
+         "runa-discount-dollars":65.3
+      }
+   },
+   "orders":[
+      {
+         "merchant-data":{
+            "unit-price-dollars":110.0,
+            "merchant-discount-dollars":10.2,
+            "runa-discount-dollars":20.5,
+            "session-type":"CONTROL",
+            "order-id":"72144305"
+         },
+         "runa-data":{
+            "unit-price-dollars":110.5,
+            "merchant-discount-dollars":10.0,
+            "runa-discount-dollars":20.2,
+            "session-type":"control",
+            "order-id":"72144305"
+         }
+      },
+      {
+         "merchant-data":{
+            "unit-price-dollars":200.0,
+            "merchant-discount-dollars":0.0,
+            "runa-discount-dollars":30.0,
+            "session-type":"TEST",
+            "order-id":"72144777"
+         },
+         "runa-data":{
+            "unit-price-dollars":200.0,
+            "merchant-discount-dollars":0.0,
+            "runa-discount-dollars":30.0,
+            "session-type":"test",
+            "order-id":"72144777"
+         }
+      },
+      {
+         "merchant-data":{
+            "unit-price-dollars":50.0,
+            "merchant-discount-dollars":2.0,
+            "runa-discount-dollars":14.8,
+            "session-type":"UNMANAGED",
+            "order-id":"72145239"
+         },
+         "runa-data":{
+            "unit-price-dollars":50.0,
+            "merchant-discount-dollars":5.0,
+            "runa-discount-dollars":15.0,
+            "session-type":"unmanaged",
+            "order-id":"72145239"
+         }
+      }
+   ]
+}
+
+
+
+
+
+For url : http://localhost:8080/?q=order-id-asc&q=session-type-desc
+
+Result:
+
+{
+   "summaries":{
+      "runa-summary":{
+         "unit-price-dollars":360.5,
+         "merchant-discount-dollars":15.0,
+         "runa-discount-dollars":65.2
+      },
+      "merchant-summary":{
+         "unit-price-dollars":360.0,
+         "merchant-discount-dollars":12.2,
+         "runa-discount-dollars":65.3
+      }
+   },
+   "orders":[
+      {
+         "merchant-data":{
+            "unit-price-dollars":110.0,
+            "merchant-discount-dollars":10.2,
+            "runa-discount-dollars":20.5,
+            "session-type":"CONTROL",
+            "order-id":"72144305"
+         },
+         "runa-data":{
+            "unit-price-dollars":110.5,
+            "merchant-discount-dollars":10.0,
+            "runa-discount-dollars":20.2,
+            "session-type":"control",
+            "order-id":"72144305"
+         }
+      },
+      {
+         "merchant-data":{
+            "unit-price-dollars":200.0,
+            "merchant-discount-dollars":0.0,
+            "runa-discount-dollars":30.0,
+            "session-type":"TEST",
+            "order-id":"72144777"
+         },
+         "runa-data":{
+            "unit-price-dollars":200.0,
+            "merchant-discount-dollars":0.0,
+            "runa-discount-dollars":30.0,
+            "session-type":"test",
+            "order-id":"72144777"
+         }
+      },
+      {
+         "merchant-data":{
+            "unit-price-dollars":50.0,
+            "merchant-discount-dollars":2.0,
+            "runa-discount-dollars":14.8,
+            "session-type":"UNMANAGED",
+            "order-id":"72145239"
+         },
+         "runa-data":{
+            "unit-price-dollars":50.0,
+            "merchant-discount-dollars":5.0,
+            "runa-discount-dollars":15.0,
+            "session-type":"unmanaged",
+            "order-id":"72145239"
+         }
+      }
+   ]
+}{
+   "summaries":{
+      "runa-summary":{
+         "unit-price-dollars":360.5,
+         "merchant-discount-dollars":15.0,
+         "runa-discount-dollars":65.2
+      },
+      "merchant-summary":{
+         "unit-price-dollars":360.0,
+         "merchant-discount-dollars":12.2,
+         "runa-discount-dollars":65.3
+      }
+   },
+   "orders":[
+      {
+         "merchant-data":{
+            "unit-price-dollars":50.0,
+            "merchant-discount-dollars":2.0,
+            "runa-discount-dollars":14.8,
+            "session-type":"UNMANAGED",
+            "order-id":"72145239"
+         },
+         "runa-data":{
+            "unit-price-dollars":50.0,
+            "merchant-discount-dollars":5.0,
+            "runa-discount-dollars":15.0,
+            "session-type":"unmanaged",
+            "order-id":"72145239"
+         }
+      },
+      {
+         "merchant-data":{
+            "unit-price-dollars":200.0,
+            "merchant-discount-dollars":0.0,
+            "runa-discount-dollars":30.0,
+            "session-type":"TEST",
+            "order-id":"72144777"
+         },
+         "runa-data":{
+            "unit-price-dollars":200.0,
+            "merchant-discount-dollars":0.0,
+            "runa-discount-dollars":30.0,
+            "session-type":"test",
+            "order-id":"72144777"
+         }
+      },
+      {
+         "merchant-data":{
+            "unit-price-dollars":110.0,
+            "merchant-discount-dollars":10.2,
+            "runa-discount-dollars":20.5,
+            "session-type":"CONTROL",
+            "order-id":"72144305"
+         },
+         "runa-data":{
+            "unit-price-dollars":110.5,
+            "merchant-discount-dollars":10.0,
+            "runa-discount-dollars":20.2,
+            "session-type":"control",
+            "order-id":"72144305"
+         }
+      }
+   ]
+}
+
+
+
